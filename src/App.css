@@ -1,38 +1,269 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #0e1529;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav_list,
+.socials_list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    align-items: center;
+    column-gap: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav_list {
+    width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.form_holder {
+    max-width: 1000px;
+    display: grid;
+    gap: 30px;
+    margin: 0 auto;
+    backdrop-filter: blur(555px);
+    grid-template-columns: 1fr 1fr;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form_btn {
+    text-align: right;
+    padding-right: 100px;
+}
+
+.form_btn > button {
+    background: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    border: 1px solid #0099FE;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #0099FE;
+}
+
+.form_wrapper {
+    background: linear-gradient(169.44deg, rgba(58, 129, 191, 0.12) 1.85%, rgba(65, 48, 90, 0.12) 98.72%);
+    backdrop-filter: blur(555px);
+    border-radius: 35.0246px;;
+}
+
+.input_wrapper > input {
+    background: #fff;
+    border: 1px solid #E6EBF4;
+    border-radius: 10px;
+    /*height: 56px;*/
+    max-width: 516px;
+    margin: 20px 0;
+    width: 90%;
+    padding: 20px;
+}
+
+.input_wrapper > label {
+    color: #fff;
+    margin-left: 40px;
+}
+
+.text_area > textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0;
+    height: 140px;
+    padding: 20px;
+}
+
+.inputs {
+    max-width: 516px;
+}
+
+.socials_list {
+    width: 10%;
+    column-gap: 27.33px !important;
+}
+
+.nav_item > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.text_area > label {
+    color: #fff;
+    margin-left: 40px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.socials_item {
+    width: 30px;
+    height: 26.67px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button_wrapper {
+    text-align: center;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.founder {
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+}
+
+.telegram {
+    background-image: url("./assets/img/icons/telegram.svg");
+}
+
+.telegram:hover {
+    background-image: url("./assets/img/icons/telegram_white.png");
+}
+
+.twitter {
+    background-image: url("./assets/img/icons/twitter.svg");
+}
+
+.twitter:hover {
+    background-image: url("./assets/img/icons/twitter_white.png");
+}
+
+.discord {
+    background-image: url("./assets/img/icons/Group.svg");
+}
+
+.discord:hover {
+    background-image: url("./assets/img/icons/discrod_white.png");
+}
+
+.nav:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #0099fe;
+}
+
+.logo_img {
+    max-width: 380px;
+    height: 197px;
+    width: 100%;
+}
+
+.logo_wrapper {
+    max-width: 1240px;
+    margin: 49px auto;
+}
+
+.logo_wrapper > img {
+    display: block;
+}
+
+.header_container {
+    max-width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+    height: 672px;
+    background-image: url("./assets/img/header.png");
+}
+
+.text {
+    color: #fff;
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    padding-top: 30px;
+    color: #0099fe;
+    text-align: center;
+}
+
+.footer_controls {
+    display: flex;
+    align-items: center;
+    padding: 60px 0 10px 0;
+    justify-content: space-between;
+}
+.footer_container > p{
+    color: #0099fe;
+    font-size: 14px;
+    text-align: left;
+}
+.footer_controls::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background: #0099fe;
+}
+
+.footer_btn > button {
+    background: transparent;
+    color: #0099fe;
+    font-size: 24px;
+    border: none;
+}
+
+.main_btn {
+    background: linear-gradient(103.91deg, #7f41be 21.01%, #0099fe 100%);
+    border-radius: 10px;
+    padding: 19px 40px;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    border: none;
+    max-width: 236px;
+}
+
+.btn_wrapper {
+    text-align: center;
+}
+
+.partners_logo {
+    margin-top: 67.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft_wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: 67.5px;
+}
+
+@media (max-width: 1440px) {
+    .header_container {
+        max-width: 1440px;
+    }
 }
