@@ -1,26 +1,22 @@
 {
   "files": {
-    "main.css": "/nfts/static/css/main.6b83b7e8.css",
-    "main.js": "/nfts/static/js/main.f3f7a0ee.js",
+    "main.css": "/nfts/static/css/main.347b2759.css",
+    "main.js": "/nfts/static/js/main.bca49e9d.js",
     "static/js/787.8ae9adfa.chunk.js": "/nfts/static/js/787.8ae9adfa.chunk.js",
     "static/media/header.png": "/nfts/static/media/header.504091648a0b72668e7c.png",
-    "static/media/5.png": "/nfts/static/media/5.52871f2129ed9fcdfa65.png",
-    "static/media/6.png": "/nfts/static/media/6.db7985a5da50b73abe1d.png",
-    "static/media/4.png": "/nfts/static/media/4.a780bdd57f0f42a0d65b.png",
-    "static/media/2.png": "/nfts/static/media/2.7ee560cd27f10521f0f8.png",
+    "static/media/igor.jpg": "/nfts/static/media/igor.6538c77ce41c17c15c10.jpg",
+    "static/media/julia.jpg": "/nfts/static/media/julia.4285ea1d257011de8d48.jpg",
     "static/media/logo.png": "/nfts/static/media/logo.d495fc9c870f5d55c506.png",
-    "static/media/3.png": "/nfts/static/media/3.77994cb286b77411b076.png",
-    "static/media/1.png": "/nfts/static/media/1.b9a94f052b52b8d527fc.png",
     "static/media/Group.svg": "/nfts/static/media/Group.2ffe5b9496060ead2a72.svg",
     "index.html": "/nfts/index.html",
     "static/media/twitter.svg": "/nfts/static/media/twitter.3e7d77eac003b9920dc0.svg",
     "static/media/telegram.svg": "/nfts/static/media/telegram.cc008186daf6bf5372f7.svg",
-    "main.6b83b7e8.css.map": "/nfts/static/css/main.6b83b7e8.css.map",
-    "main.f3f7a0ee.js.map": "/nfts/static/js/main.f3f7a0ee.js.map",
+    "main.347b2759.css.map": "/nfts/static/css/main.347b2759.css.map",
+    "main.bca49e9d.js.map": "/nfts/static/js/main.bca49e9d.js.map",
     "787.8ae9adfa.chunk.js.map": "/nfts/static/js/787.8ae9adfa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b83b7e8.css",
-    "static/js/main.f3f7a0ee.js"
+    "static/css/main.347b2759.css",
+    "static/js/main.bca49e9d.js"
   ]
 }
