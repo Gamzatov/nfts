@@ -24,7 +24,6 @@ const Partners = () => {
                 <div className="logo_item">
                     <img src={five} alt=""/>
                 </div>
-
             </div>
         </div>
     );

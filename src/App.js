@@ -13,10 +13,17 @@ import Nav from "./components/Nav";
 
 function App() {
     const [items, setItems] = useState([]);
+    const [isLoading, setLoading] = useState(true);
     useEffect(() => {
+        setLoading(true);
         fetch('https://6320334e9f82827dcf271256.mockapi.io/nft')
             .then((res) => res.json())
-            .then((json) => setItems(json))
+            .then((json) => {
+                setItems(json)
+            })
+            .then(() => {
+                setLoading(false)
+            })
     }, []);
     const [nav, setNav] = useState(false);
     const toggleNav = () => {
@@ -29,7 +36,7 @@ function App() {
             <Head/>
             <WhyWe/>
             <Partners/>
-            <Nfts items={items}/>
+            <Nfts items={items} loading={isLoading}/>
             <HowToBuy/>
             <Founders/>
             <Form />

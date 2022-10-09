@@ -19,21 +19,7 @@ export default function App() {
             <div>
                 <CarouselItem/>
             </div>
-            // <Swiper
-            //     spaceBetween={50}
-            //     slidesPerView={windowSize <= 762 ? 2 : 3 }
-            //     pagination={{clickable: true}}
-            //     navigation
-            //     onSlideChange={() => console.log('slide change')}
-            //     onSwiper={(swiper) => console.log(swiper)}
-            // >
-            //     <SwiperSlide><CarouselItem/></SwiperSlide>
-            //     <SwiperSlide><CarouselItem/></SwiperSlide>
-            //     <SwiperSlide><CarouselItem/></SwiperSlide>
-            //     <SwiperSlide><CarouselItem/></SwiperSlide>
-            //     <SwiperSlide><CarouselItem/></SwiperSlide>
-            //     <SwiperSlide><CarouselItem/></SwiperSlide>
-            // </Swiper>
+
         );
     };
 };
