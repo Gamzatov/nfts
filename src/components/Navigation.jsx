@@ -1,33 +1,53 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link, animateScroll as scroll} from "react-scroll";
 
 const Navigation = ({nav, setNav}) => {
+    const [windowSize, setWindowSize] = useState(getWindowSize());
+    useEffect(() => {
+        function handleWindowResize() {
+            setWindowSize(getWindowSize());
+        }
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    }, []);
+
+    function getWindowSize() {
+        const {innerWidth, innerHeight} = window;
+        return {innerWidth, innerHeight};
+    }
+
+    console.log('asdasd', windowSize >= 762 ? setNav : '')
+    console.log('asdasd', windowSize.innerWidth)
     return (
         <div className="container" id='top'>
             <div className={nav ? "mob_nav" : "desktop nav"}>
                 <ul className="nav_list">
                     <li  className="nav_item">
-                        <Link onClick={setNav} to="#why_we"
+                        <Link onClick={windowSize.innerWidth <= 762 ? setNav : ''} to="#why_we"
                               spy={true}
                               smooth={true}>Чому саме наша колекція</Link>
                     </li>
                     <li className="nav_item">
-                        <Link onClick={setNav} to="collection"
+                        <Link onClick={windowSize.innerWidth < 762 ? setNav : ''} to="collection"
                               spy={true}
                               smooth={true}>Огляд колекції</Link>
                     </li>
                     <li className="nav_item">
-                        <Link onClick={setNav} to="buy"
+                        <Link  onClick={windowSize.innerWidth < 762 ? setNav : ''} to="buy"
                               spy={true}
                               smooth={true}>Як придбати?</Link>
                     </li>
                     <li className="nav_item">
-                        <Link onClick={setNav} to="founders"
+                        <Link onClick={windowSize.innerWidth < 762 ? setNav : ''} to="founders"
                               spy={true}
                               smooth={true}>Фаундери</Link>
                     </li>
                     <li className="nav_item">
-                        <Link onClick={setNav} to="contacts"
+                        <Link onClick={windowSize.innerWidth < 762 ? setNav : ''} to="contacts"
                               spy={true}
                               smooth={true}>Контакти</Link>
                     </li>

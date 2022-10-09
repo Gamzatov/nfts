@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import NftsItem from "./NftsItem";
 
 const Nfts = ({items}) => {
+    console.log(items)
     const [show, setShow] = useState(false);
     const showToggle = () => {
         setShow(!show)
@@ -10,7 +11,7 @@ const Nfts = ({items}) => {
         <div id='collection' className="container" id='collection'>
             <div className="nft_wrapper">
                 {
-                    items.slice(0, 20).map((el) => <NftsItem src={el.src} key={el.id} />)
+                    items.slice(0, 20).map((el) => <NftsItem src={el.src} link={el.info} title={el.title} key={el.id} />)
                 }
                 {
                     show ? items.slice(20, 100).map((el) => <NftsItem src={el.src} key={el.id} />) : ''

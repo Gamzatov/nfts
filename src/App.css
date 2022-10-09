@@ -108,6 +108,20 @@ body {
     cursor: pointer;
     text-fill-color: transparent;
 }
+.footer_btn > a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .2s;
+}
+.footer_btn > a:hover{
+    color: #fff;
+}
+.logo_item > img{
+    max-width: 150px;
+
+}
 
 .text_area > label {
     color: #fff;
@@ -285,6 +299,7 @@ p {
 .partners_logo {
     margin-top: 67.5px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -390,6 +405,10 @@ p {
         background: none;
         height: 30px;
         color: #0099fe;
+    }
+    .partners_logo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 .igor,

@@ -12,25 +12,8 @@ import 'swiper/css';
 import {Swiper, SwiperSlide} from "swiper/react";
 
 export default function App() {
-    const [windowSize, setWindowSize] = useState(getWindowSize());
-    useEffect(() => {
-        function handleWindowResize() {
-            setWindowSize(getWindowSize());
-        }
 
-        window.addEventListener('resize', handleWindowResize);
 
-        return () => {
-            window.removeEventListener('resize', handleWindowResize);
-        };
-    }, []);
-
-    function getWindowSize() {
-        const {innerWidth, innerHeight} = window;
-        return {innerWidth, innerHeight};
-    }
-
-    console.log(windowSize)
     const FoundersCarousel = () => {
         return (
             <div>
