@@ -97,6 +97,16 @@ body {
 .nav_item > a {
     color: #fff;
     text-decoration: none;
+    transition: .2s;
+}
+.nav_item > a:hover{
+    background: linear-gradient(103.91deg, #7F41BE 21.01%, #0099FE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    cursor: pointer;
+    text-fill-color: transparent;
 }
 
 .text_area > label {
@@ -239,8 +249,10 @@ p {
     background: linear-gradient(103.91deg, #7f41be 21.01%, #0099fe 100%);
     border-radius: 10px;
     padding: 19px 40px;
+    transition: .2s;
     color: #fff;
     font-size: 24px;
+    cursor: pointer;
     letter-spacing: 1.5px;
     border: none;
     max-width: 236px;
@@ -248,8 +260,28 @@ p {
 
 .btn_wrapper {
     text-align: center;
+    margin-top: 40px;
 }
-
+.add_btn{
+    background: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    transition: .2s;
+    line-height: 22px;
+    border: 1px solid #0099FE;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #0099FE;
+    cursor: pointer;
+}
+.add_btn:hover{
+    color: #fff;
+    border: 1px solid #fff;
+}
 .partners_logo {
     margin-top: 67.5px;
     display: flex;
@@ -278,12 +310,21 @@ p {
 .open_btn{
     display: none;
 }
+.main_btn:hover{
+    border: 1px solid #fff;
+}
 @media(max-width: 762px){
     .open_btn{
         display: block;
         position: absolute;
         top: 20px;
         left: 20px;
+    }
+    .footer_btn > a{
+        font-size: 20px;
+    }
+    .footer_btn{
+        text-align: center;
     }
     .logo_wrapper{
         padding: 30px;

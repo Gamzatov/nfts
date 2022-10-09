@@ -7,27 +7,27 @@ const Navigation = ({nav, setNav}) => {
             <div className={nav ? "mob_nav" : "desktop nav"}>
                 <ul className="nav_list">
                     <li  className="nav_item">
-                        <Link  to="#why_we"
+                        <Link onClick={setNav} to="#why_we"
                               spy={true}
                               smooth={true}>Чому саме наша колекція</Link>
                     </li>
                     <li className="nav_item">
-                        <Link to="collection"
+                        <Link onClick={setNav} to="collection"
                               spy={true}
                               smooth={true}>Огляд колекції</Link>
                     </li>
                     <li className="nav_item">
-                        <Link to="buy"
+                        <Link onClick={setNav} to="buy"
                               spy={true}
                               smooth={true}>Як придбати?</Link>
                     </li>
                     <li className="nav_item">
-                        <Link to="founders"
+                        <Link onClick={setNav} to="founders"
                               spy={true}
                               smooth={true}>Фаундери</Link>
                     </li>
                     <li className="nav_item">
-                        <Link to="contacts"
+                        <Link onClick={setNav} to="contacts"
                               spy={true}
                               smooth={true}>Контакти</Link>
                     </li>

@@ -8,7 +8,7 @@ const NftsItem = ({src}) => {
             <ModalImage
                 small={src}
                 alt="Hello World!"
-            />;
+            />
         </div>
     );
 };

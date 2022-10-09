@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
 
 const WhyWe = () => {
     return (
@@ -27,7 +30,11 @@ const WhyWe = () => {
                     Наближаємо кінець руського корабля разом!
                 </p>
                 <div className="btn_wrapper">
-                    <button className="main_btn">ПРИДБАТИ</button>
+                    <Link
+                        to='contacts'
+                        spy={true}
+                        smooth={true}
+                        className="main_btn">ПРИДБАТИ</Link>
                 </div>
             </div>
         </div>
