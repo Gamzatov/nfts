@@ -2,7 +2,6 @@ import React from 'react';
 import ModalImage from "react-modal-image";
 
 const NftsItem = ({src}) => {
-    console.log(src)
     return (
         <div className='nft_item'>
             {/*<img src={src} alt=""/>*/}

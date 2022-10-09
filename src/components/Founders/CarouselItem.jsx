@@ -1,21 +1,20 @@
 import React from 'react';
-import one from '../../assets/img/founders/1.png'
-import two from '../../assets/img/founders/2.png'
-import three from '../../assets/img/founders/3.png'
-import four from '../../assets/img/founders/4.png'
-import five from '../../assets/img/founders/5.png'
-import six from '../../assets/img/founders/6.png'
-const CarouselItem = () => {
+const CarouselItem = ({item, name, insta, facebook, telega, twitter}) => {
     return (
         <div className='founder'>
-            <div className="founder_img">
-                <img src={one} alt=""/>
+            <div className={item + " founder_img"}>
+                {/*<img src={img} alt=""/>*/}
             </div>
-            <div className="founder_info">
-                <p className='founder_name'>Name of Founder</p>
-                <p className="founder_job">artist</p>
+            <div className=" founder_info">
+                <p className='founder_name'>{name}</p>
+                <ul className="social">
+                    <li><a href={facebook} className="fa fa-facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href={twitter} className="fa fa-twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href={telega} className="fa fa-google-plus"><ion-icon name="paper-plane-outline"></ion-icon></a></li>
+                    <li><a href={insta} className="fa fa-linkedin"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
             </div>
-            
+
         </div>
     );
 };

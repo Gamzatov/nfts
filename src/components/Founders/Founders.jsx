@@ -1,5 +1,7 @@
 import React from 'react';
-import FoundersCarousel from "./FoundersCarousel";
+import CarouselItem from "./CarouselItem";
+import igor from '../../assets/img/founders/igor.jpg'
+import julia from '../../assets/img/founders/julia.jpg'
 
 const Founders = () => {
     return (
@@ -7,6 +9,19 @@ const Founders = () => {
             <p className="title">
                 Наші фаундери
             </p>
+            <div className="founders_wrapper">
+                <CarouselItem insta='https://instagram.com/igod24'
+                              name='Igor Morozuyk'
+                              twitter='https://twitter.com/Igor_Morozuyk?t=JpjOpOcBufo8Iy3T9p9oaA&s=35'
+                              telega='@igod24'
+                              facebook='https://www.facebook.com/igor.comfort'
+                              item='igor' img={igor} />
+                <CarouselItem
+                    insta='https://instagram.com/juliarekamie'
+                    name='Julia Rekamie'
+                    item='julia' img={julia}/>
+            </div>
+
             <div className="text_wrapper">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur enim ex fuga hic
@@ -14,7 +29,7 @@ const Founders = () => {
                     similique veniam voluptate voluptatum.
                 </p>
             </div>
-            <FoundersCarousel/>
+
         </div>
     );
 };

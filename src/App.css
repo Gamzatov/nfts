@@ -77,7 +77,7 @@ body {
 }
 
 .text_area > textarea {
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     border: none;
     margin: 20px 0;
@@ -261,9 +261,190 @@ p {
     grid-template-columns: repeat(8, 1fr);
     margin-top: 67.5px;
 }
-
+.close_nav{
+    display: none;
+}
 @media (max-width: 1440px) {
     .header_container {
         max-width: 1440px;
     }
+}
+.mob_nav{
+    display: none;
+}
+.none{
+    display: none;
+}
+.open_btn{
+    display: none;
+}
+@media(max-width: 762px){
+    .open_btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .logo_wrapper{
+        padding: 30px;
+    }
+    .logo_img{
+        max-width: 200px;
+        height: 120px;
+    }
+    .header_container{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .nft_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        text-align: center;
+    }
+    .mob_nav{
+        display: block;
+    }
+    .form_holder{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .container{
+        padding: 30px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .desktop{
+        display: none;
+    }
+    .nav_list{
+        display: block;
+        visibility: visible;
+        padding: 50px;
+        background: rgba(0,0,0, .8);
+        backdrop-filter: blur(20px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        margin: 0;
+    }
+    .close_nav{
+        display: block;
+        z-index: 2;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+    .nav_item{
+        margin: 30px;
+    }
+    .close_nav > button{
+        font-size: 20px;
+        border: 2px solid #0099fe;
+        border-radius: 10px;
+        background: none;
+        height: 30px;
+        color: #0099fe;
+    }
+}
+.igor,
+.julia {
+    max-width: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.igor{
+    background-image: url('./assets/img/founders/igor.jpg');
+    text-align: center;
+    margin: 0 auto;
+    background-size: cover;
+}
+.julia{
+    background-image: url('./assets/img/founders/julia.jpg');
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+}
+.founders_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.social{
+    padding-left: 0;
+}
+.social > li> a{
+    color: #fff;
+    font-size: 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+.social > li > a:hover{
+    color: #0099fe;
+}
+.social > li {
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 5px;
+    text-align: center;
+}
+@media(max-width:600px){
+    .founders_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .button_wrapper{
+        flex-direction: column;
+    }
+    .button_wrapper> img{
+        margin: 10px auto;
+    }
+
+}
+.nav_button {
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #0099fe 0%, #0099fe 100%);
+    background-size: 50px 4px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 0.2s background;
+    border: none;
+    font-size: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    /* When open */
+}
+.nav_button:before, .nav_button:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    width: 50px;
+    height: 4px;
+    background: #0099fe;
+    transition: 0.2s transform;
+    transform-origin: 8px 7px;
+}
+.nav_button:after {
+    top: 63px;
+    transform-origin: 8px -5px;
+}
+.nav_button.is-open {
+    background-size: 0px 2px;
+}
+.nav_button.is-open:before {
+    transform: rotate(45deg);
+}
+.nav_button.is-open:after {
+    transform: rotate(-45deg);
 }

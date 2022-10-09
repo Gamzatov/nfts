@@ -8,11 +8,23 @@ const WhyWe = () => {
                     Чому саме наша колекція?
                 </p>
                 <p className="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laboriosam blanditiis consequatur
-                    labore
-                    quaerat atque error voluptatem, sint porro, deserunt id facere. Id, tempore tenetur pariatur
-                    repellat
-                    impedit libero distinctio?
+                    Одна з головних технічних переваг Ukraine Charity Art - це ексклюзивне партнерство з OmniFlix
+                    Marketplace, що базується на блокчейні Cosmos - одній з найперспективніших екосистем.
+                </p>
+                <p className="text">
+                    Художня цінність нашої колекції - це роботи, які були створені здебільшого під час війни, поки виють
+                    сирени та летять снаряди. Крім самого NFT, ми пропонуємо створення ексклюзивної фізичної марки із
+                    зображенням придбаного витвору мистецтва, яку надсилаємо покупцеві. Маркою можна користуватися за
+                    призначенням, адже вона буде створена у партнерстві з Укрпоштою, або ж зберігати як предмет
+                    колекції.
+                </p>
+                <p className="text">
+                    І найголовніше. Кожен придбаний NFT - це придбана каска, бронежилет та інші необхідні спорядження та
+                    предмети для наших військових. Це ще один крок до неминучої перемоги України. Звіти по закупівлях на
+                    кошти, зібрані з продажу NFT, публікуються на Ukrincom.
+                </p>
+                <p className="text">
+                    Наближаємо кінець руського корабля разом!
                 </p>
                 <div className="btn_wrapper">
                     <button className="main_btn">ПРИДБАТИ</button>

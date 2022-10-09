@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Navigation = () => {
+const Navigation = ({nav}) => {
     return (
         <div className="container">
-            <div className="nav">
+            <div className={nav ? "mob_nav" : "desktop nav"}>
                 <ul className="nav_list">
                     <li className="nav_item">
                         <a href="#why_we">Чому саме наша колекція</a>
