@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = () => {
     return (
-        <div className='container form_wrapper'>
+        <div className='container form_wrapper' id='contacts'>
             <p className="title">
                 Напишіть нам
             </p>

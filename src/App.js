@@ -25,7 +25,7 @@ function App() {
     return (
         <div className="App">
             <Nav toggle={toggleNav} nav={nav}/>
-            <Navigation nav={nav}/>
+            <Navigation nav={nav} setNav={setNav}/>
             <Head/>
             <WhyWe/>
             <Partners/>

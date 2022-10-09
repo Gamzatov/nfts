@@ -228,7 +228,7 @@ p {
     background: #0099fe;
 }
 
-.footer_btn > button {
+.footer_btn > a {
     background: transparent;
     color: #0099fe;
     font-size: 24px;

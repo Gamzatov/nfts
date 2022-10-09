@@ -1,24 +1,35 @@
 import React from 'react';
+import {Link, animateScroll as scroll} from "react-scroll";
 
-const Navigation = ({nav}) => {
+const Navigation = ({nav, setNav}) => {
     return (
-        <div className="container">
+        <div className="container" id='top'>
             <div className={nav ? "mob_nav" : "desktop nav"}>
                 <ul className="nav_list">
-                    <li className="nav_item">
-                        <a href="#why_we">Чому саме наша колекція</a>
+                    <li  className="nav_item">
+                        <Link  to="#why_we"
+                              spy={true}
+                              smooth={true}>Чому саме наша колекція</Link>
                     </li>
                     <li className="nav_item">
-                        <a href="#collection">Огляд колекції</a>
+                        <Link to="collection"
+                              spy={true}
+                              smooth={true}>Огляд колекції</Link>
                     </li>
                     <li className="nav_item">
-                        <a href="#buy">Як придбати?</a>
+                        <Link to="buy"
+                              spy={true}
+                              smooth={true}>Як придбати?</Link>
                     </li>
                     <li className="nav_item">
-                        <a href="#founders">Фаундери</a>
+                        <Link to="founders"
+                              spy={true}
+                              smooth={true}>Фаундери</Link>
                     </li>
                     <li className="nav_item">
-                        <a href="#contacts">Контакти</a>
+                        <Link to="contacts"
+                              spy={true}
+                              smooth={true}>Контакти</Link>
                     </li>
                 </ul>
                 <ul className="socials_list">

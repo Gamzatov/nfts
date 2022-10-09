@@ -2,7 +2,7 @@ import React from 'react';
 import omniflix from '../assets/img/logo/omniflix.png'
 const HowToBuy = () => {
     return (
-        <div className='container'>
+        <div className='container' id='buy'>
             <p className="title">Як придбати</p>
             <div className="text_warapper">
                 <p>

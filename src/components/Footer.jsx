@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from "../assets/img/logo/logo.png";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import omniflix from "../assets/img/logo/omniflix.png";
 import Navigation from "./Navigation";
 
@@ -11,9 +13,11 @@ const Footer = () => {
                     <img src={omniflix} alt=""/>
                 </div>
                 <div className="footer_btn">
-                    <button>
+                    <Link to='top'
+                          spy={true}
+                          smooth={true}>
                         <ion-icon name="arrow-up-circle-outline"></ion-icon>   До початку
-                    </button>
+                    </Link>
                 </div>
             </div>
             <Navigation/>

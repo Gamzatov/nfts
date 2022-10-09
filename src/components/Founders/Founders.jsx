@@ -5,7 +5,7 @@ import julia from '../../assets/img/founders/julia.jpg'
 
 const Founders = () => {
     return (
-        <div className='container'>
+        <div className='container' id='founders'>
             <p className="title">
                 Наші фаундери
             </p>
@@ -13,12 +13,13 @@ const Founders = () => {
                 <CarouselItem insta='https://instagram.com/igod24'
                               name='Igor Morozuyk'
                               twitter='https://twitter.com/Igor_Morozuyk?t=JpjOpOcBufo8Iy3T9p9oaA&s=35'
-                              telega='@igod24'
+                              telega='https://t.me/igod24'
                               facebook='https://www.facebook.com/igor.comfort'
                               item='igor' img={igor} />
                 <CarouselItem
                     insta='https://instagram.com/juliarekamie'
                     name='Julia Rekamie'
+                    telega='https://t.me/juliarekamie'
                     item='julia' img={julia}/>
             </div>
 
