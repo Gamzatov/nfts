@@ -93,18 +93,22 @@ body {
     /*width: 10%;*/
     column-gap: 27.33px !important;
 }
-.nft_item{
+
+.nft_item {
     transition: .2s;
 }
-.nft_item:hover{
+
+.nft_item:hover {
     transform: scale(1.2);
 }
+
 .nav_item > a {
     color: #fff;
     text-decoration: none;
     transition: .2s;
 }
-.nav_item > a:hover{
+
+.nav_item > a:hover {
     background: linear-gradient(103.91deg, #7F41BE 21.01%, #0099FE 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -113,17 +117,20 @@ body {
     cursor: pointer;
     text-fill-color: transparent;
 }
-.footer_btn > a{
+
+.footer_btn > a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     transition: .2s;
 }
-.footer_btn > a:hover{
+
+.footer_btn > a:hover {
     color: #fff;
 }
-.logo_item > img{
+
+.logo_item > img {
     max-width: 150px;
 
 }
@@ -242,20 +249,22 @@ p {
     padding: 60px 0 10px 0;
     justify-content: space-between;
 }
-.footer_container > p{
+
+.footer_container > p {
     color: #0099fe;
     font-size: 14px;
     text-align: left;
 }
-.footer_controls::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    height: 2px;
-    width: 100%;
-    background: #0099fe;
-}
+
+/*.footer_controls::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: -10px;*/
+/*    height: 2px;*/
+/*    width: 100%;*/
+/*    background: #0099fe;*/
+/*}*/
 
 .footer_btn > a {
     background: transparent;
@@ -281,7 +290,8 @@ p {
     text-align: center;
     margin-top: 40px;
 }
-.add_btn{
+
+.add_btn {
     background: transparent;
     font-style: normal;
     font-weight: 500;
@@ -297,10 +307,12 @@ p {
     color: #0099FE;
     cursor: pointer;
 }
-.add_btn:hover{
+
+.add_btn:hover {
     color: #fff;
     border: 1px solid #fff;
 }
+
 .partners_logo {
     margin-top: 67.5px;
     display: flex;
@@ -313,77 +325,99 @@ p {
     grid-template-columns: repeat(8, 1fr);
     margin-top: 67.5px;
 }
-.close_nav{
+
+.close_nav {
     display: none;
 }
+
 @media (max-width: 1440px) {
     .header_container {
         max-width: 1440px;
     }
 }
-.mob_nav{
+
+.mob_nav {
     display: none;
 }
-.none{
+
+.none {
     display: none;
 }
-.open_btn{
+
+.open_btn {
     display: none;
 }
-.main_btn:hover{
+
+.main_btn:hover {
     border: 1px solid #fff;
 }
-@media(max-width: 762px){
-    .open_btn{
+
+@media (max-width: 762px) {
+    .open_btn {
         display: block;
         position: absolute;
         top: 20px;
         left: 20px;
     }
-    .footer_btn > a{
+
+    .footer_btn > a {
         font-size: 20px;
     }
-    .footer_btn{
+
+    .footer_btn {
         text-align: center;
     }
-    .logo_wrapper{
+
+    .logo_wrapper {
         padding: 30px;
     }
-    .logo_img{
+
+    .logo_img {
         max-width: 200px;
         height: 120px;
     }
-    .header_container{
-        background-size: 100%;
+
+    .header_container {
+        background-size: cover;
+        position: relative;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 80%;
     }
-    .nft_wrapper{
+
+
+
+    .nft_wrapper {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
         text-align: center;
     }
-    .mob_nav{
+
+    .mob_nav {
         display: block;
     }
-    .form_holder{
+
+    .form_holder {
         grid-template-columns: 1fr;
         width: 90%;
     }
-    .container{
+
+    .container {
         padding: 30px;
     }
-    .title{
+
+    .title {
         font-size: 2rem;
     }
-    .desktop{
+
+    .desktop {
         display: none;
     }
-    .nav_list{
+
+    .nav_list {
         display: block;
         visibility: visible;
         padding: 50px;
-        background: rgba(0,0,0, .8);
+        background: rgba(0, 0, 0, .8);
         backdrop-filter: blur(20px);
         position: absolute;
         top: 0;
@@ -392,7 +426,8 @@ p {
         height: 100%;
         margin: 0;
     }
-    .close_nav{
+
+    .close_nav {
         display: block;
         z-index: 2;
         position: absolute;
@@ -400,10 +435,12 @@ p {
         right: 20px;
         font-size: 24px;
     }
-    .nav_item{
+
+    .nav_item {
         margin: 30px;
     }
-    .close_nav > button{
+
+    .close_nav > button {
         font-size: 20px;
         border: 2px solid #0099fe;
         border-radius: 10px;
@@ -411,11 +448,13 @@ p {
         height: 30px;
         color: #0099fe;
     }
-    .partners_logo{
+
+    .partners_logo {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
+
 .igor,
 .julia {
     max-width: 150px;
@@ -423,36 +462,43 @@ p {
     height: 150px;
     border-radius: 50%;
 }
-.igor{
+
+.igor {
     background-image: url('./assets/img/founders/igor.jpg');
     text-align: center;
     margin: 0 auto;
     background-size: cover;
 }
-.julia{
+
+.julia {
     background-image: url('./assets/img/founders/julia.jpg');
     background-size: cover;
     text-align: center;
     margin: 0 auto;
 }
-.founders_wrapper{
+
+.founders_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 600px;
     margin: 0 auto;
 }
-.social{
+
+.social {
     padding-left: 0;
 }
-.social > li> a{
+
+.social > li > a {
     color: #fff;
     font-size: 30px;
     transition: .2s;
     cursor: pointer;
 }
-.social > li > a:hover{
+
+.social > li > a:hover {
     color: #0099fe;
 }
+
 .social > li {
     display: inline-block;
     color: #fff;
@@ -460,18 +506,22 @@ p {
     margin: 0 5px;
     text-align: center;
 }
-@media(max-width:600px){
-    .founders_wrapper{
+
+@media (max-width: 600px) {
+    .founders_wrapper {
         grid-template-columns: 1fr;
     }
-    .button_wrapper{
+
+    .button_wrapper {
         flex-direction: column;
     }
-    .button_wrapper> img{
+
+    .button_wrapper > img {
         margin: 10px auto;
     }
 
 }
+
 .nav_button {
     position: relative;
     margin: auto;
@@ -489,6 +539,7 @@ p {
     cursor: pointer;
     /* When open */
 }
+
 .nav_button:before, .nav_button:after {
     content: "";
     position: absolute;
@@ -500,25 +551,31 @@ p {
     transition: 0.2s transform;
     transform-origin: 8px 7px;
 }
+
 .nav_button:after {
     top: 63px;
     transform-origin: 8px -5px;
 }
+
 .nav_button.is-open {
     background-size: 0px 2px;
 }
+
 .nav_button.is-open:before {
     transform: rotate(45deg);
 }
+
 .nav_button.is-open:after {
     transform: rotate(-45deg);
 }
+
 .lds-ring {
     display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
 }
+
 .lds-ring div {
     box-sizing: border-box;
     display: block;
@@ -531,10 +588,12 @@ p {
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: #0099fe transparent transparent transparent;
 }
-.founder_img{
+
+.founder_img {
     position: relative;
 }
-.founder_img:after{
+
+.founder_img:after {
     position: absolute;
     top: -5%;
     border-radius: 50%;
@@ -545,18 +604,23 @@ p {
     width: 110%;
     background: #0099fe;
 }
+
 .lds-ring div:nth-child(1) {
     animation-delay: -0.45s;
 }
+
 .lds-ring div:nth-child(2) {
     animation-delay: -0.3s;
 }
+
 .lds-ring div:nth-child(3) {
     animation-delay: -0.15s;
 }
-#collection{
+
+#collection {
     text-align: center;
 }
+
 @keyframes lds-ring {
     0% {
         transform: rotate(0deg);
