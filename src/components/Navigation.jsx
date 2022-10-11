@@ -20,8 +20,7 @@ const Navigation = ({nav, setNav}) => {
         return {innerWidth, innerHeight};
     }
 
-    console.log('asdasd', windowSize >= 762 ? setNav : '')
-    console.log('asdasd', windowSize.innerWidth)
+
     return (
         <div className="container" id='top'>
             <div className={nav ? "mob_nav" : "desktop nav"}>

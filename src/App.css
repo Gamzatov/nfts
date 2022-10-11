@@ -420,6 +420,7 @@ p {
         top: 20px;
         left: 20px;
     }
+
     .card-image{
         transform: translateY(10%);
         width: 90%;
@@ -438,13 +439,16 @@ p {
     }
 
     .logo_img {
-        max-width: 200px;
-        height: 120px;
+        max-width: 120px;
+        height: 60px;
+        position: absolute;
+        top: 40px;
+        right: 20px;
     }
 
     .header_container {
         background-size: cover;
-        position: relative;
+        /*position: relative;*/
         background-repeat: no-repeat;
         background-position: 80%;
     }
@@ -515,12 +519,16 @@ p {
     }
 
     .close_nav > button {
-        font-size: 20px;
-        border: 2px solid #0099fe;
+        font-size: 34px;
+        border: none;
+        cursor: pointer;
         border-radius: 10px;
         background: none;
-        height: 30px;
+        transition: .3s;
         color: #0099fe;
+    }
+    .close_nav > button:hover{
+        color: red;
     }
 
     .partners_logo {
