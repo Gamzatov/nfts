@@ -20,7 +20,7 @@ const Image = ({items}) => {
                                     {el.title}
                                 </p>
                                 <div className="btn_wrapper">
-                                    <a className='add_btn' href={el.link}>Посилання</a>
+                                    <a className='small_btn' href={el.link}>Посилання</a>
                                 </div>
                             </div>
                         </div>
