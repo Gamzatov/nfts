@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nfts/static/css/main.c0f57330.css",
-    "main.js": "/nfts/static/js/main.59447fde.js",
+    "main.css": "/nfts/static/css/main.41f19ff4.css",
+    "main.js": "/nfts/static/js/main.c809a101.js",
     "static/js/787.8ae9adfa.chunk.js": "/nfts/static/js/787.8ae9adfa.chunk.js",
     "static/media/header.png": "/nfts/static/media/header.504091648a0b72668e7c.png",
     "static/media/igor.jpg": "/nfts/static/media/igor.6538c77ce41c17c15c10.jpg",
@@ -14,12 +14,12 @@
     "index.html": "/nfts/index.html",
     "static/media/twitter.svg": "/nfts/static/media/twitter.3e7d77eac003b9920dc0.svg",
     "static/media/telegram.svg": "/nfts/static/media/telegram.cc008186daf6bf5372f7.svg",
-    "main.c0f57330.css.map": "/nfts/static/css/main.c0f57330.css.map",
-    "main.59447fde.js.map": "/nfts/static/js/main.59447fde.js.map",
+    "main.41f19ff4.css.map": "/nfts/static/css/main.41f19ff4.css.map",
+    "main.c809a101.js.map": "/nfts/static/js/main.c809a101.js.map",
     "787.8ae9adfa.chunk.js.map": "/nfts/static/js/787.8ae9adfa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0f57330.css",
-    "static/js/main.59447fde.js"
+    "static/css/main.41f19ff4.css",
+    "static/js/main.c809a101.js"
   ]
 }
