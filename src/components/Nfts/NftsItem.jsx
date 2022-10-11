@@ -1,17 +1,11 @@
 import React from 'react';
-import ModalImage from "react-modal-image";
+import {Link} from "react-router-dom";
 
-const NftsItem = ({src, title, info}) => {
+const NftsItem = ({src, id}) => {
+    console.log(id);
     return (
         <div className='nft_item'>
-            {/*<img src={src} alt=""/>*/}
-            <ModalImage
-                small={src}
-                description={title}
-                link={info}
-                hideDownload={true}
-                alt={title}
-            />
+           <Link to={`/id${id}`}> <img src={src} alt=""/></Link>
         </div>
     );
 };

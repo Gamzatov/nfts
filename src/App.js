@@ -10,10 +10,14 @@ import Nfts from "./components/Nfts/Nfts";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+import {Route, Routes} from "react-router-dom";
+import Image from "./components/Image";
 
 function App() {
     const [items, setItems] = useState([]);
+    const [showPhoto, setShowPhoto] = useState(false);
     const [isLoading, setLoading] = useState(true);
+    console.log('app', isLoading)
     useEffect(() => {
         setLoading(true);
         fetch('https://6320334e9f82827dcf271256.mockapi.io/nft')
@@ -29,6 +33,9 @@ function App() {
     const toggleNav = () => {
         setNav(!nav);
     }
+    const togglePhoto = () => {
+        setShowPhoto(!showPhoto)
+    }
     return (
         <div className="App">
             <Nav toggle={toggleNav} nav={nav}/>
@@ -36,11 +43,16 @@ function App() {
             <Head/>
             <WhyWe/>
             <Partners/>
-            <Nfts items={items} loading={isLoading}/>
+            <Nfts items={items} loading={isLoading} showPhoto={showPhoto} setShowPhoto={togglePhoto}/>
             <HowToBuy/>
             <Founders/>
             <Form />
             <Footer/>
+            <div className="single_img">
+                <Routes>
+                    <Route path='/id:id' element={<Image items={items}/>} />
+                </Routes>
+            </div>
             <div className="container footer_container">
                 <p>
                     © Ukraine Charity arts, 2022
