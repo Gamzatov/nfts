@@ -492,6 +492,15 @@ p {
         margin: 0;
     }
 
+    .socials_list{
+        position: absolute;
+        z-index: 2;
+        margin: 50px auto;
+        text-align: center;
+        padding-left: 30px;
+        bottom: 0;
+    }
+
     .close_nav {
         display: block;
         z-index: 2;
@@ -656,6 +665,7 @@ p {
 
 .founder_img {
     position: relative;
+
 }
 
 .founder_img:after {
@@ -663,6 +673,7 @@ p {
     top: -5%;
     border-radius: 50%;
     left: -5%;
+    backdrop-filter: drop-shadow(30px 10px 4px #4444dd);
     content: '';
     height: 110%;
     z-index: -1;

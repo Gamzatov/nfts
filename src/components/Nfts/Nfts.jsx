@@ -15,15 +15,12 @@ const Nfts = ({items, loading, setShowPhoto, showPhoto}) => {
                     :
                     <div className="nft_wrapper">
                         {
-                            items.slice(0, 20).map((el) => <NftsItem showPhoto={showPhoto} setShowPhoto={setShowPhoto}
-                                                                     src={el.src}
-                                                                     link={el.info} id={el.id} title={el.title}
-                                                                     key={el.id}/>)
-                        }
-                        {
-                            show ? items.slice(20, 100).map((el) => <NftsItem showPhoto={showPhoto} id={el.id}
-                                                                              setShowPhoto={setShowPhoto}
-                                                                              src={el.src} key={el.id}/>) : ''
+                            items.slice(0, show ? 100 : 20).map((el) => <NftsItem showPhoto={showPhoto}
+                                                                                  setShowPhoto={setShowPhoto}
+                                                                                  src={el.src}
+                                                                                  link={el.info} id={el.id}
+                                                                                  title={el.title}
+                                                                                  key={el.id}/>)
                         }
                     </div>
             }
