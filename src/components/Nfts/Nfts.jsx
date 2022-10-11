@@ -3,6 +3,13 @@ import NftsItem from "./NftsItem";
 import Loader from "../Loader";
 
 const Nfts = ({items, loading, setShowPhoto, showPhoto}) => {
+    const [windowSize, setWindowSize] = useState(getWindowSize());
+    function getWindowSize() {
+        const {innerWidth, innerHeight} = window;
+        return {innerWidth, innerHeight};
+    }
+
+    console.log(windowSize.innerWidth)
     console.log(items)
     const [show, setShow] = useState(false);
     const showToggle = () => {
@@ -15,7 +22,7 @@ const Nfts = ({items, loading, setShowPhoto, showPhoto}) => {
                     :
                     <div className="nft_wrapper">
                         {
-                            items.slice(0, show ? 100 : 20).map((el) => <NftsItem showPhoto={showPhoto}
+                            items.slice(0, show  ?   100  :   windowSize.innerWidth < 762 ? 6 : 20).map((el) => <NftsItem showPhoto={showPhoto}
                                                                                   setShowPhoto={setShowPhoto}
                                                                                   src={el.src}
                                                                                   link={el.info} id={el.id}

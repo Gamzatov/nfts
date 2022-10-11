@@ -3,23 +3,10 @@ import {Link, animateScroll as scroll} from "react-scroll";
 
 const Navigation = ({nav, setNav}) => {
     const [windowSize, setWindowSize] = useState(getWindowSize());
-    useEffect(() => {
-        function handleWindowResize() {
-            setWindowSize(getWindowSize());
-        }
-
-        window.addEventListener('resize', handleWindowResize);
-
-        return () => {
-            window.removeEventListener('resize', handleWindowResize);
-        };
-    }, []);
-
     function getWindowSize() {
         const {innerWidth, innerHeight} = window;
         return {innerWidth, innerHeight};
     }
-
 
     return (
         <div className="container" id='top'>

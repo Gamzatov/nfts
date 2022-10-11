@@ -14,6 +14,25 @@ import {Route, Routes} from "react-router-dom";
 import Image from "./components/Image";
 
 function App() {
+    const [windowSize, setWindowSize] = useState(getWindowSize());
+    useEffect(() => {
+        function handleWindowResize() {
+            setWindowSize(getWindowSize());
+        }
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    }, []);
+
+    function getWindowSize() {
+        const {innerWidth, innerHeight} = window;
+        return {innerWidth, innerHeight};
+    }
+
+
     const [items, setItems] = useState([]);
     const [showPhoto, setShowPhoto] = useState(false);
     const [isLoading, setLoading] = useState(true);
@@ -39,11 +58,11 @@ function App() {
     return (
         <div className="App">
             <Nav toggle={toggleNav} nav={nav}/>
-            <Navigation nav={nav} setNav={toggleNav}/>
+            <Navigation nav={nav} windowSize={windowSize} getWindowSize={getWindowSize} setNav={toggleNav}/>
             <Head/>
             <WhyWe/>
             <Partners/>
-            <Nfts items={items} loading={isLoading} showPhoto={showPhoto} setShowPhoto={togglePhoto}/>
+            <Nfts items={items} loading={isLoading}  showPhoto={showPhoto} setShowPhoto={togglePhoto}/>
             <HowToBuy/>
             <Founders/>
             <Form />
