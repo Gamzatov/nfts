@@ -283,7 +283,6 @@ p {
     font-size: 24px;
     cursor: pointer;
     letter-spacing: 1.5px;
-    border: none;
     max-width: 236px;
 }
 .small_btn{
